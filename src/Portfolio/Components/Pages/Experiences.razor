@@ -1,0 +1,307 @@
+@page "/experiences"
+@namespace Portfolio.Components.Pages
+
+<PageTitle>Work Experience - Nicholas Page's Portfolio</PageTitle>
+
+<div class="experiences-container">
+    <!-- Hero Section -->
+    <div class="experiences-hero">
+        <div class="hero-background">
+            <i class="bi bi-briefcase-fill"></i>
+        </div>
+        <div class="hero-content">
+            <h1 class="display-3 mb-3">
+                <i class="bi bi-briefcase-fill me-3"></i>
+                Professional Experience
+            </h1>
+            <p class="lead mb-4">
+                Over <strong>8 years of experience</strong> in software development, education, and technical consulting. 
+                From enterprise web development to full-time instruction, building production systems and mentoring the next generation.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Companies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-section">
+        <h2 class="section-title">
+            <i class="bi bi-clock-history me-3"></i>
+            Career Timeline
+        </h2>
+
+        <!-- South Hills -->
+        <div class="experience-card featured">
+            <div class="company-logo">
+                <img src="images/company-logos/south_hills_logo.jpg" alt="South Hills School of Business and Technology" />
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div>
+                        <h3>IT/Software Development Instructor & Software Engineer</h3>
+                        <p class="company-name">South Hills School of Business and Technology</p>
+                        <p class="date-range">August 2022 - Present</p>
+                    </div>
+                    <span class="status-badge current">Current Position</span>
+                </div>
+                <p class="experience-summary">
+                    Full-time instructor delivering technically demanding coursework across software development, computer science, 
+                    systems, and IT disciplines. Developer and maintainer of internal microservice-based platform built with ASP.NET 
+                    and RESTful APIs, managing CI/CD pipelines using Jenkins.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Teaching 15+ courses from Intro Programming to Advanced JavaScript and Cloud/DevOps</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Built internal institutional systems with ASP.NET and REST APIs</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Implemented CI/CD pipelines with Jenkins for automated deployments</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">ASP.NET</span>
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">REST APIs</span>
+                    <span class="tech-badge">Jenkins</span>
+                    <span class="tech-badge">Microservices</span>
+                    <span class="tech-badge">DevOps</span>
+                </div>
+                <a href="/experiences/south-hills" class="detail-link">
+                    View Full Details <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Geek Squad -->
+        <div class="experience-card">
+            <div class="company-logo">
+                <img src="images/company-logos/geek_squad_logo.png" alt="Geek Squad" />
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div>
+                        <h3>Advanced Repair Agent</h3>
+                        <p class="company-name">Geek Squad Inc.</p>
+                        <p class="date-range">July 2021 - August 2022</p>
+                    </div>
+                </div>
+                <p class="experience-summary">
+                    Provided technical support and hardware/software repair services. Worked directly with clients to diagnose 
+                    issues and deliver solutions for computer systems and mobile devices.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Computer software and hardware repair (Level 1)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>iPhone repairs and technical troubleshooting</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Direct client interaction and technical consultation</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Hardware Repair</span>
+                    <span class="tech-badge">Technical Support</span>
+                    <span class="tech-badge">Customer Service</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- API Technologies -->
+        <div class="experience-card">
+            <div class="company-logo">
+                <img src="images/company-logos/api_technologies_corp_logo.jpg" alt="API Technologies Corp" />
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <p class="company-name">API Technologies Corp.</p>
+                        <p class="date-range">June 2020 - June 2021</p>
+                    </div>
+                </div>
+                <p class="experience-summary">
+                    Developed enterprise web applications using C# and ASP.NET MVC. Served as Scrum Master, coordinating 
+                    remote team collaboration and delivering production-ready code.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Scrum Master for remote development team</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Migrated SQL databases between server environments</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Converted legacy VB websites to VB.NET applications</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">C#</span>
+                    <span class="tech-badge">ASP.NET MVC</span>
+                    <span class="tech-badge">SQL Server</span>
+                    <span class="tech-badge">VB.NET</span>
+                    <span class="tech-badge">Agile/Scrum</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DFIN -->
+        <div class="experience-card featured">
+            <div class="company-logo">
+                <img src="images/company-logos/dfin_logo.jpg" alt="Donnelley Financial Solutions" />
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div>
+                        <h3>Technical Engagement Developer & Software Developer</h3>
+                        <p class="company-name">Donnelley Financial Solutions (DFIN)</p>
+                        <p class="date-range">May 2019 - February 2020 (Full-time)</p>
+                    </div>
+                </div>
+                <p class="experience-summary">
+                    Worked directly with clients on technical solutions, developed internal applications for business and sales teams, 
+                    and handled application security including penetration remediation planning. Previously completed two internships 
+                    working on the Venue data room web application.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Provided client tutorials and live technical demonstrations</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Developed applications with focus on security and penetration remediation</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Previous internships: Summer 2017, Summer 2018</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">Web Development</span>
+                    <span class="tech-badge">Security</span>
+                    <span class="tech-badge">Client Relations</span>
+                    <span class="tech-badge">Application Development</span>
+                </div>
+                <a href="/experiences/dfin" class="detail-link">
+                    View Full Details <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Freelance -->
+        <div class="experience-card">
+            <div class="company-logo freelance-logo">
+                <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="experience-content">
+                <div class="experience-header">
+                    <div>
+                        <h3>Freelance Web Developer</h3>
+                        <p class="company-name">Self-Employed</p>
+                        <p class="date-range">April 2017 - Present</p>
+                    </div>
+                    <span class="status-badge ongoing">Ongoing</span>
+                </div>
+                <p class="experience-summary">
+                    Creating custom websites with focus on aesthetics, functionality, and cross-browser compatibility. 
+                    Developed and maintain custom CMS with secure authentication for clients.
+                </p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Gilbert & Gilbert Auctions - PHP to ASP.NET migration with Google API integration</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>CWD Breeding - Custom WordPress plugin with ecommerce and database management</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Custom CMS development with secure authentication</span>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-badge">PHP</span>
+                    <span class="tech-badge">ASP.NET</span>
+                    <span class="tech-badge">WordPress</span>
+                    <span class="tech-badge">Google APIs</span>
+                    <span class="tech-badge">Full Stack</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Summary -->
+    <div class="skills-summary-section">
+        <h2 class="section-title">
+            <i class="bi bi-stars me-3"></i>
+            Core Competencies
+        </h2>
+        <div class="competencies-grid">
+            <div class="competency-card">
+                <div class="competency-icon">
+                    <i class="bi bi-code-square"></i>
+                </div>
+                <h3>Full-Stack Development</h3>
+                <p>Expertise in C#, ASP.NET, Java, JavaScript, and modern web frameworks. Building scalable, maintainable applications from frontend to backend.</p>
+            </div>
+            <div class="competency-card">
+                <div class="competency-icon">
+                    <i class="bi bi-diagram-3"></i>
+                </div>
+                <h3>System Architecture</h3>
+                <p>Designing and implementing microservice architectures, REST APIs, and CI/CD pipelines for reliable, automated deployments.</p>
+            </div>
+            <div class="competency-card">
+                <div class="competency-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+                <h3>Technical Leadership</h3>
+                <p>Leading teams as Scrum Master, mentoring students, and bridging technical concepts with practical implementation.</p>
+            </div>
+            <div class="competency-card">
+                <div class="competency-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Security & Best Practices</h3>
+                <p>Application security, penetration testing remediation, secure authentication, and following industry-standard development practices.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="experiences-cta-wrapper">
+        <ContactCta 
+            Title="Let's Work Together"
+            Description="Interested in my professional experience or looking for a skilled developer and educator? I'm always open to discussing new opportunities and challenging projects."
+            ShowContactInfo="true"
+            GitHubUrl="https://github.com/wheat32"
+            GitHubButtonText="View My Work" />
+    </div>
+</div>
+
