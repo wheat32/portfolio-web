@@ -1,21 +1,48 @@
 @namespace Portfolio.Components.Shared
 
-<nav class="nav flex-row mb-4">
-    <div class="nav-item px-2 header">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-            <h1 class="h3">SH - SDP</h1>
+<nav class="navbar navbar-expand-md navbar-dark nav-menu mb-4">
+    <div class="container-fluid nav-shell">
+        <NavLink class="navbar-brand brand-link" href="/" Match="NavLinkMatch.All">
+            <span class="brand-title">Nicholas Page's</span>
+            <span class="brand-subtitle">PORTFOLIO</span>
         </NavLink>
-    </div>
 
-    <div class="nav-item px-2">
-        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-            <i class="bi bi-house-door-fill me-1"></i> Home
-        </NavLink>
-    </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="nav-item px-2">
-        <NavLink class="nav-link" href="/GitHubReinvite" Match="NavLinkMatch.All">
-            <i class="bi bi-github me-1"></i> GitHub Re-invite
-        </NavLink>
+        <div class="collapse navbar-collapse nav-links" id="portfolioNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item px-2">
+                    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                        <i class="bi bi-house-door-fill me-1"></i> Home
+                    </NavLink>
+                </li>
+
+                <li class="nav-item px-2">
+                    <NavLink class="nav-link" href="#" Match="NavLinkMatch.All">
+                        <i class="bi bi-person-circle me-1"></i> About
+                    </NavLink>
+                </li>
+
+                <li class="nav-item px-2">
+                    <NavLink class="nav-link" href="#" Match="NavLinkMatch.All">
+                        <i class="bi bi-briefcase-fill me-1"></i> Experience
+                    </NavLink>
+                </li>
+
+                <li class="nav-item px-2">
+                    <NavLink class="nav-link" href="#" Match="NavLinkMatch.All">
+                        <i class="bi bi-mortarboard-fill me-1"></i> Education
+                    </NavLink>
+                </li>
+
+                <li class="nav-item px-2">
+                    <NavLink class="nav-link" href="#" Match="NavLinkMatch.All">
+                        <i class="bi bi-code-slash me-1"></i> Activities
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

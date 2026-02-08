@@ -5,4 +5,6 @@
 #bd-theme {
     color: white;
     fill: white;
+    background: var(--primary-background);
+    border: 1px solid var(--primary-background);
 }

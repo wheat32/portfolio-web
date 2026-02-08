@@ -1,6 +1,50 @@
 nav {
-    background-color: #2971b9;
+    background: var(--purple-gradient) !important;
     width: 100%;
+}
+
+.nav-menu {
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-shell {
+    padding: 0;
+}
+
+.nav-links {
+    flex-grow: 1;
+}
+
+.nav-links ::deep .navbar-nav {
+    gap: 0.25rem;
+}
+
+::deep .brand-link {
+    text-decoration: none;
+    background-color: transparent !important;
+    color: #f1f1f1;
+    height: auto;
+    padding: 0.25rem 0.5rem;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+
+.brand-link ::deep {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.brand-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.brand-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .nav-item {
@@ -12,10 +56,10 @@ nav {
     background: none;
     border: none;
     border-radius: 4px;
-    height: 3rem;
+    height: 3.2rem;
     display: flex;
     align-items: center;
-    line-height: 3rem;
+    line-height: 3.2rem;
 }
 
 .nav-item ::deep a.active {
@@ -27,13 +71,16 @@ nav {
     color: white;
 }
 
-.header ::deep .nav-link {
-    background-color: transparent !important;
-}
+@media (max-width: 767.98px) {
+    .nav-item ::deep .nav-link {
+        height: auto;
+        line-height: 1.5;
+        padding: 0.5rem 0.75rem;
+    }
 
-.header ::deep .nav-link h1 {
-    font-weight: bold;
-    margin: 0;
+    .nav-links ::deep .navbar-nav {
+        padding-top: 0.25rem;
+    }
 }
 
 /* Show dropdown menu on hover */
