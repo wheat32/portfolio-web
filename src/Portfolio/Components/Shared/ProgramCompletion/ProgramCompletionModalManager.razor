@@ -1,0 +1,43 @@
+@namespace Portfolio.Components.Shared.ProgramCompletion
+@rendermode InteractiveServer
+@inject ProgramCompletionService CompletionService
+@inject NavigationManager NavigationManager
+@using Portfolio.Services
+@implements IDisposable
+
+<ProgramCompletionModal
+    IsVisible="showModal"
+    OnViewOutput="HideModal"
+    OnRestart="RestartTerminal"/>
+
+@code
+{
+    private bool showModal;
+
+    protected override void OnInitialized()
+    {
+        CompletionService.OnProgramCompleted += ShowModal;
+    }
+
+    private void ShowModal()
+    {
+        showModal = true;
+        InvokeAsync(StateHasChanged);
+    }
+
+    private void HideModal()
+    {
+        showModal = false;
+        StateHasChanged();
+    }
+
+    private void RestartTerminal()
+    {
+        NavigationManager.NavigateTo(NavigationManager.Uri, true);
+    }
+
+    public void Dispose()
+    {
+        CompletionService.OnProgramCompleted -= ShowModal;
+    }
+}
