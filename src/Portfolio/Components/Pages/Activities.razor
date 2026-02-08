@@ -1,0 +1,410 @@
+@page "/activities"
+@namespace Portfolio.Components.Pages
+
+<PageTitle>Activities - Nicholas Page's Portfolio</PageTitle>
+
+<div class="activities-container">
+    <!-- Hero Section -->
+    <div class="activities-hero">
+        <div class="hero-content">
+            <h1 class="display-3 mb-4">
+                Projects & Activities
+            </h1>
+            <p class="lead mb-4">
+                From open-source contributions to freelance projects, game development to teaching—
+                here's what keeps me coding, learning, and building.
+            </p>
+            <a href="https://github.com/wheat32" target="_blank" rel="noopener noreferrer" class="github-profile-link">
+                <i class="bi bi-github me-2"></i>
+                <span>View My GitHub Profile</span>
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Open Source Projects Section -->
+    <div class="activities-section">
+        <h2 class="section-title">
+            <i class="bi bi-code-slash me-3"></i>
+            Open Source Projects
+        </h2>
+        
+        <div class="projects-grid">
+            <!-- Qt Task Manager -->
+            <div class="project-card featured">
+                <div class="project-header">
+                    <div class="project-icon qt">
+                        <i class="bi bi-list-task"></i>
+                    </div>
+                    <div class="project-badge">WIP</div>
+                </div>
+                <div class="project-screenshot">
+                    <img src="images/qt_taskmanager.png" alt="Qt Task Manager Screenshot" />
+                </div>
+                <h3>Qt Task Manager</h3>
+                <p class="project-description">
+                    A work-in-progress task manager for Linux built with C++ and the Qt framework. 
+                    This project showcases low-level systems programming combined with modern UI design.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Qt Framework</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Systems Programming</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/wheat32/QtTaskManager" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="bi bi-github me-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pokeclicker Platinum -->
+            <div class="project-card featured">
+                <div class="project-header">
+                    <div class="project-icon pokemon">
+                        <i class="bi bi-controller"></i>
+                    </div>
+                    <div class="project-badge">Maintainer</div>
+                </div>
+                <div class="project-screenshot">
+                    <img src="images/pokeclicker.png" alt="Pokéclicker Platinum Screenshot" />
+                </div>
+                <h3>Pokéclicker Platinum</h3>
+                <p class="project-description">
+                    A game about catching Pokémon, defeating gym leaders, and watching numbers get bigger. 
+                    Made the game work seamlessly with Electron and optimized it for Wayland and Linux systems.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Electron</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">Wayland</span>
+                    <span class="tech-tag">Game Development</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/wheat32/pokeclicker" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <i class="bi bi-github me-2"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Freelance Work Section -->
+    <div class="activities-section">
+        <h2 class="section-title">
+            <i class="bi bi-briefcase me-3"></i>
+            Freelance Projects
+        </h2>
+        
+        <div class="freelance-grid">
+            <!-- Gilbert Auctions -->
+            <div class="freelance-card">
+                <div class="freelance-header">
+                    <div class="freelance-icon">
+                        <i class="bi bi-hammer"></i>
+                    </div>
+                    <div class="freelance-status">Production</div>
+                </div>
+                <h3>Gilbert and Gilbert Auctions</h3>
+                <p class="freelance-description">
+                    My very first professional website, initially developed in PHP and later migrated to ASP.NET. 
+                    A complete auction platform with catalog management, bidding functionality, and user authentication.
+                </p>
+                <div class="freelance-details">
+                    <div class="detail-row">
+                        <i class="bi bi-gear-fill me-2"></i>
+                        <span><strong>Technologies:</strong> PHP, ASP.NET, SQL Server, JavaScript</span>
+                    </div>
+                    <div class="detail-row">
+                        <i class="bi bi-star-fill me-2"></i>
+                        <span><strong>Highlights:</strong> Full migration from PHP to .NET, Custom CMS</span>
+                    </div>
+                </div>
+                <div class="freelance-links">
+                    <a href="https://www.gilbertauctions.com/" target="_blank" rel="noopener noreferrer" class="freelance-link">
+                        <i class="bi bi-globe me-2"></i>
+                        Visit Website
+                    </a>
+                </div>
+            </div>
+
+            <!-- CWD Breeding WordPress Plugin -->
+            <div class="freelance-card">
+                <div class="freelance-header">
+                    <div class="freelance-icon">
+                        <i class="bi bi-plugin"></i>
+                    </div>
+                    <div class="freelance-status">Custom Plugin</div>
+                </div>
+                <h3>CWD Breeding Management System</h3>
+                <p class="freelance-description">
+                    A comprehensive custom WordPress plugin for CWD Breeding featuring advanced functionality 
+                    for breeding operation management, ecommerce, and pedigree tracking.
+                </p>
+                <div class="freelance-details">
+                    <div class="detail-row">
+                        <i class="bi bi-gear-fill me-2"></i>
+                        <span><strong>Technologies:</strong> PHP, WordPress, MySQL, JavaScript</span>
+                    </div>
+                    <div class="detail-row">
+                        <i class="bi bi-star-fill me-2"></i>
+                        <span><strong>Features:</strong> E-commerce, User Management, Deer Pedigree System, Custom Database</span>
+                    </div>
+                </div>
+                <div class="freelance-links">
+                    <a href="https://cwdbreeding.z13.web.core.windows.net/home" target="_blank" rel="noopener noreferrer" class="freelance-link">
+                        <i class="bi bi-globe me-2"></i>
+                        View Client Site
+                    </a>
+                </div>
+            </div>
+
+            <!-- General Freelance -->
+            <div class="freelance-card">
+                <div class="freelance-header">
+                    <div class="freelance-icon">
+                        <i class="bi bi-code-square"></i>
+                    </div>
+                    <div class="freelance-status">Ongoing</div>
+                </div>
+                <h3>Freelance Web Development</h3>
+                <p class="freelance-description">
+                    Active freelance developer since 2017, creating aesthetically pleasing and well-functioning websites. 
+                    Developed and maintain a custom CMS with secure authentication for client management.
+                </p>
+                <div class="freelance-details">
+                    <div class="detail-row">
+                        <i class="bi bi-calendar-check me-2"></i>
+                        <span><strong>Since:</strong> April 2017 - Present</span>
+                    </div>
+                    <div class="detail-row">
+                        <i class="bi bi-star-fill me-2"></i>
+                        <span><strong>Skills:</strong> Custom CMS Development, Cross-browser Compatibility, Client Relations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Development Section -->
+    <div class="activities-section">
+        <h2 class="section-title">
+            <i class="bi bi-joystick me-3"></i>
+            Game Development
+        </h2>
+        
+        <div class="game-dev-content">
+            <div class="game-dev-card">
+                <div class="game-dev-header">
+                    <div class="unity-logo">
+                        <i class="bi bi-unity"></i>
+                    </div>
+                    <h3>Unity3D Game Development</h3>
+                </div>
+                <p class="lead">
+                    Hobbyist Unity3D game developer for over <strong>10 years</strong>, exploring interactive 
+                    experiences, game mechanics, and creative storytelling through code.
+                </p>
+                <div class="game-dev-highlights">
+                    <div class="highlight-card">
+                        <i class="bi bi-trophy-fill"></i>
+                        <div>
+                            <strong>Quality Assurance</strong>
+                            <p>QA tester for Aksys Games on <em>Tokyo Xanadu eX+</em> localization and port from PlayStation 4 to PC</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="bi bi-box-seam"></i>
+                        <div>
+                            <strong>3D Modelling</strong>
+                            <p>Experience with Blender for creating 3D models and assets for game projects</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="bi bi-code-slash"></i>
+                        <div>
+                            <strong>Game Programming Focus</strong>
+                            <p>Bachelor's degree in Computer Science with a focus on Game Development from Lock Haven University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Academic & Teaching Activities -->
+    <div class="activities-section">
+        <h2 class="section-title">
+            <i class="bi bi-mortarboard me-3"></i>
+            Academic Leadership & Clubs
+        </h2>
+        
+        <div class="academic-grid">
+            <div class="academic-card">
+                <div class="academic-icon robotics">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <h3>Robotics Club Advisor</h3>
+                <p>
+                    <strong>Sole advisor</strong> for the Robotics Club at South Hills, guiding students in hardware integration, 
+                    software development, and algorithmic problem-solving. Mentoring the next generation of engineers.
+                </p>
+                <div class="academic-tags">
+                    <span class="tag">Hardware</span>
+                    <span class="tag">Software</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Mentorship</span>
+                </div>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-icon programming">
+                    <i class="bi bi-trophy"></i>
+                </div>
+                <h3>Programming Team Captain</h3>
+                <p>
+                    Led Lock Haven University's programming team as captain during junior year, mentoring underclassmen 
+                    and guiding the team to <strong>4th place</strong> at a regional programming competition.
+                </p>
+                <div class="academic-tags">
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Competitive Programming</span>
+                    <span class="tag">Mentoring</span>
+                </div>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-icon robotics">
+                    <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <h3>LHU Robotics Team Co-Founder</h3>
+                <p>
+                    Co-founded and captained the Lock Haven Robotics team during sophomore year. Developed pathfinding 
+                    algorithms in Java and modified C libraries for better Java code interpretation on robot hardware.
+                </p>
+                <div class="academic-tags">
+                    <span class="tag">Pathfinding</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C Libraries</span>
+                    <span class="tag">Leadership</span>
+                </div>
+            </div>
+
+            <div class="academic-card">
+                <div class="academic-icon btc">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h3>BTC Club Officer</h3>
+                <p>
+                    Former <strong>Secretary and Treasurer</strong> for the Lock Haven University BTC Club, 
+                    managing administrative responsibilities and fostering a community for relaxed discussion and social engagement.
+                </p>
+                <div class="academic-tags">
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Administration</span>
+                    <span class="tag">Community</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Expertise Highlights -->
+    <div class="activities-section">
+        <h2 class="section-title">
+            <i class="bi bi-tools me-3"></i>
+            Additional Technical Activities
+        </h2>
+        
+        <div class="tech-activities-grid">
+            <div class="tech-activity-card">
+                <div class="activity-icon reverse-eng">
+                    <i class="bi bi-cpu"></i>
+                </div>
+                <h4>Reverse Engineering</h4>
+                <p>
+                    Passionate about decompiling, analyzing assembly code, making modifications, and recompiling 
+                    DLLs and executables to understand software at the lowest level.
+                </p>
+            </div>
+
+            <div class="tech-activity-card">
+                <div class="activity-icon systems">
+                    <i class="bi bi-terminal"></i>
+                </div>
+                <h4>Systems Programming</h4>
+                <p>
+                    Deep expertise in UNIX/Linux systems, low-level C/C++ programming, MIPS assembly, 
+                    and understanding of operating system principles.
+                </p>
+            </div>
+
+            <div class="tech-activity-card">
+                <div class="activity-icon devops">
+                    <i class="bi bi-diagram-3"></i>
+                </div>
+                <h4>DevOps & Infrastructure</h4>
+                <p>
+                    Design and maintain microservice-based systems, CI/CD pipelines with Jenkins, 
+                    Docker containerization, and cloud infrastructure on AWS and Azure.
+                </p>
+            </div>
+
+            <div class="tech-activity-card">
+                <div class="activity-icon database">
+                    <i class="bi bi-database"></i>
+                </div>
+                <h4>Database Engineering</h4>
+                <p>
+                    Expert in SQL tuning, database performance optimization, I/O behavior analysis, 
+                    security implementation, and both relational and NoSQL databases.
+                </p>
+            </div>
+
+            <div class="tech-activity-card">
+                <div class="activity-icon mobile">
+                    <i class="bi bi-phone"></i>
+                </div>
+                <h4>Mobile Development</h4>
+                <p>
+                    Experience building native Android apps with Kotlin/Java and iOS apps with Swift, 
+                    plus cross-platform development with React Native.
+                </p>
+            </div>
+
+            <div class="tech-activity-card">
+                <div class="activity-icon iot">
+                    <i class="bi bi-hdd-network"></i>
+                </div>
+                <h4>IoT Programming</h4>
+                <p>
+                    Hands-on experience with Internet of Things development using Python on Raspberry Pi, 
+                    teaching students hardware-software integration.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="activities-cta">
+        <h2 class="mb-4">Interested in Collaborating?</h2>
+        <p class="lead mb-4">
+            I'm always open to interesting projects, open-source contributions, and opportunities 
+            to work with passionate developers and teams.
+        </p>
+        <div class="cta-buttons">
+            <a href="https://github.com/wheat32" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                <i class="bi bi-github me-2"></i>
+                Follow on GitHub
+            </a>
+            <a href="mailto:nickpage32@comcast.net" class="btn btn-outline-primary btn-lg">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Get in Touch
+            </a>
+        </div>
+    </div>
+</div>
+

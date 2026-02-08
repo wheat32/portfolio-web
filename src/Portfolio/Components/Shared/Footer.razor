@@ -1,10 +1,27 @@
 @namespace Portfolio.Components.Shared
 
 <footer>
-    <div>
-        App by Nicholas Page.
+    <div class="footer-left">
+        <div class="footer-copyright">
+            <i class="bi bi-c-circle me-1"></i>
+            <span>2025-@DateTime.Now.Year Nicholas E. Page</span>
+        </div>
+        <div class="footer-links">
+            <a href="https://github.com/wheat32/portfolio-web" target="_blank" rel="noopener noreferrer" class="footer-link">
+                <i class="bi bi-github me-1"></i>
+                <span>Source Code</span>
+            </a>
+            <span class="footer-divider">•</span>
+            <a href="/credits" class="footer-link">
+                <i class="bi bi-file-text me-1"></i>
+                <span>Credits & Licenses</span>
+            </a>
+        </div>
     </div>
-    <div>
-        @Text.VersionString
+    <div class="footer-right">
+        <div class="footer-version">
+            <i class="bi bi-tag me-1"></i>
+            <span>@Text.VersionString</span>
+        </div>
     </div>
 </footer>
