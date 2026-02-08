@@ -1,0 +1,48 @@
+@* Contact Call-to-Action Component *@
+<div class="contact-cta">
+    <h2 class="mb-4">@Title</h2>
+    <p class="lead mb-4">@Description</p>
+    
+    @if (ShowContactInfo)
+    {
+        <div class="contact-info mb-4">
+            <div class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:nickpage32@comcast.net">nickpage32@comcast.net</a>
+            </div>
+            <div class="contact-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Spring Mills, PA</span>
+            </div>
+        </div>
+    }
+    
+    <div class="cta-buttons">
+        <a href="mailto:nickpage32@comcast.net" class="btn btn-primary btn-lg">
+            <i class="bi bi-envelope-fill me-2"></i>
+            Get in Touch
+        </a>
+        <a href="@GitHubUrl" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-lg">
+            <i class="bi bi-github me-2"></i>
+            @GitHubButtonText
+        </a>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public String Title { get; set; } = "Let's Connect";
+    
+    [Parameter]
+    public String Description { get; set; } = "Interested in collaboration, have questions about my work, or just want to chat about technology? I'd love to hear from you!";
+    
+    [Parameter]
+    public bool ShowContactInfo { get; set; } = false;
+    
+    [Parameter]
+    public String GitHubUrl { get; set; } = "https://github.com/wheat32";
+    
+    [Parameter]
+    public String GitHubButtonText { get; set; } = "Follow on GitHub";
+}
+

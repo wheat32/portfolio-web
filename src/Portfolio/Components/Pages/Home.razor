@@ -7,12 +7,19 @@
         <p class="home-kicker">Nicholas E. Page</p>
         <h1>Software Engineer, Instructor & Full-Stack Developer</h1>
         <p class="home-lede">
-            Bridging industry experience and education through rigorous software engineering, systems programming, and technical leadership. 
-            I build production systems, design curricula, and mentor the next generation of developers.
+            Hardworking and knowledgeable developer with <strong>8 years of experience</strong> in software development and education. 
+            Expertise in C#, ASP.NET, and agile methodologies. I build production systems, design curricula, and mentor the next 
+            generation of developers through hands-on learning and real-world applications.
         </p>
         <div class="home-actions">
-            <a class="btn btn-primary btn-lg text-white" href="#about">Learn More</a>
-            <a class="btn btn-outline-secondary btn-lg text-body-secondary" href="mailto:nickpage32@comcast.net">Get in Touch</a>
+            <a class="btn btn-primary btn-lg" href="/about">
+                <i class="bi bi-person-circle me-2"></i>
+                Learn More
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="mailto:nickpage32@comcast.net">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Get in Touch
+            </a>
         </div>
     </div>
     <div class="home-hero-panel">
@@ -22,7 +29,7 @@
             </div>
             <div class="home-panel-title">Current Role</div>
             <p class="home-panel-role">IT/Software Development Instructor</p>
-            <p class="home-panel-org text-body-secondary">South Hills School of Business and Technology</p>
+            <p class="home-panel-org">South Hills School of Business and Technology</p>
             <p class="home-panel-detail">Designing curriculum, building internal systems with ASP.NET & CI/CD, and mentoring students in real-world engineering practices.</p>
         </div>
     </div>
@@ -341,23 +348,12 @@
 </section>
 
 <section class="home-cta" id="contact">
-    <div class="container-fluid">
-        <div class="home-cta-content">
-            <div>
-                <h2>Let's Connect</h2>
-                <p class="text-body">I'm always interested in collaborating on challenging projects, consulting opportunities, or speaking engagements about software engineering and education.</p>
-                <div class="home-contact-info">
-                    <div class="home-contact-item">
-                        <i class="bi bi-envelope-fill text-body-secondary"></i>
-                        <a href="mailto:nickpage32@comcast.net" class="text-body">nickpage32@comcast.net</a>
-                    </div>
-                    <div class="home-contact-item">
-                        <i class="bi bi-geo-alt-fill text-body-secondary"></i>
-                        <span class="text-body">Spring Mills, PA</span>
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn-light btn-lg" href="mailto:nickpage32@comcast.net">Send Me a Message</a>
-        </div>
+    <div class="home-cta-wrapper">
+        <ContactCta 
+            Title="Let's Connect"
+            Description="I'm always interested in collaborating on challenging projects, consulting opportunities, or speaking engagements about software engineering and education."
+            ShowContactInfo="true"
+            GitHubUrl="https://github.com/wheat32"
+            GitHubButtonText="Follow on GitHub" />
     </div>
 </section>

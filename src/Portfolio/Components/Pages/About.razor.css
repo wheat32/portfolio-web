@@ -224,57 +224,123 @@
     padding: 3rem;
     border-radius: 20px;
     border: 2px solid;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--purple-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.education-card:hover::before {
+    opacity: 1;
 }
 
 [data-bs-theme="light"] .education-card {
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-color: #e9ecef;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
 }
 
 [data-bs-theme="dark"] .education-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
     border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.education-card:hover {
+    transform: translateY(-10px) scale(1.01);
+    border-color: #8B5CF6;
+}
+
+[data-bs-theme="light"] .education-card:hover {
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.25);
+}
+
+[data-bs-theme="dark"] .education-card:hover {
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.35);
 }
 
 .graduation-photo {
     position: sticky;
     top: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+    border: 3px solid;
+    transition: all 0.4s ease;
+}
+
+[data-bs-theme="light"] .graduation-photo {
+    border-color: #8B5CF6;
+}
+
+[data-bs-theme="dark"] .graduation-photo {
+    border-color: rgba(139, 92, 246, 0.5);
+}
+
+.graduation-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 80px rgba(139, 92, 246, 0.45);
 }
 
 .graduation-photo img {
     width: 100%;
-    border-radius: 16px;
-    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.graduation-photo img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.4);
+.graduation-photo:hover img {
+    transform: scale(1.08);
 }
 
 .photo-caption {
     text-align: center;
-    margin-top: 1rem;
-    font-style: italic;
-    opacity: 0.8;
-    font-size: 0.95rem;
+    padding: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+[data-bs-theme="light"] .photo-caption {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    color: white;
+}
+
+[data-bs-theme="dark"] .photo-caption {
+    background: rgba(139, 92, 246, 0.25);
+    backdrop-filter: blur(10px);
 }
 
 .education-icon {
     flex-shrink: 0;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--purple-gradient);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 10px 35px rgba(139, 92, 246, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.education-card:hover .education-icon {
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 15px 45px rgba(139, 92, 246, 0.6);
 }
 
 .education-icon i {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: white;
 }
 
@@ -283,21 +349,29 @@
 }
 
 .education-content h3 {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+[data-bs-theme="light"] .education-content h3 {
+    background: var(--purple-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .education-content h4 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 600;
-    opacity: 0.8;
-    margin-bottom: 1.5rem;
+    opacity: 0.75;
+    margin-bottom: 1.75rem;
 }
 
 .education-details {
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
@@ -306,6 +380,26 @@
     display: flex;
     align-items: center;
     font-size: 1rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid;
+    transition: all 0.3s ease;
+}
+
+[data-bs-theme="light"] .detail-item {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(124, 66, 231, 0.05) 100%);
+    border-color: rgba(139, 92, 246, 0.2);
+}
+
+[data-bs-theme="dark"] .detail-item {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.detail-item:hover {
+    transform: scale(1.05) translateY(-2px);
+    border-color: #8B5CF6;
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.25);
 }
 
 .detail-item i {
@@ -321,22 +415,59 @@
 .highlight-item {
     display: flex;
     align-items: flex-start;
-    padding: 0.75rem;
-    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.highlight-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--purple-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 12px 0 0 12px;
+}
+
+.highlight-item:hover::before {
+    opacity: 1;
 }
 
 [data-bs-theme="light"] .highlight-item {
-    background: rgba(139, 92, 246, 0.08);
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.08) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 [data-bs-theme="dark"] .highlight-item {
-    background: rgba(139, 92, 246, 0.15);
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.highlight-item:hover {
+    transform: translateX(15px);
+    border-color: #8B5CF6;
+}
+
+[data-bs-theme="light"] .highlight-item:hover {
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.15) 0%, rgba(124, 66, 231, 0.08) 100%);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.2);
+}
+
+[data-bs-theme="dark"] .highlight-item:hover {
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.25) 0%, rgba(139, 92, 246, 0.1) 100%);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
 }
 
 .highlight-item i {
     color: #8B5CF6;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-top: 0.1rem;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.3));
 }
 
 /* Certifications Section */
@@ -349,42 +480,71 @@
 .certification-card {
     display: flex;
     gap: 1.5rem;
-    padding: 2rem;
-    border-radius: 16px;
+    padding: 2.25rem;
+    border-radius: 20px;
     border: 2px solid;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent 0%, #8B5CF6 50%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certification-card:hover::before {
+    opacity: 1;
 }
 
 [data-bs-theme="light"] .certification-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-color: #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 [data-bs-theme="dark"] .certification-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
     border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .certification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.25);
+    transform: translateY(-10px) scale(1.02);
     border-color: #8B5CF6;
+}
+
+[data-bs-theme="light"] .certification-card:hover {
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
+}
+
+[data-bs-theme="dark"] .certification-card:hover {
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.35);
 }
 
 .cert-icon {
     flex-shrink: 0;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .certification-card:hover .cert-icon {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.15) rotate(-8deg);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 .cert-icon.aws {
@@ -396,8 +556,10 @@
 }
 
 .cert-icon i {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
 }
 
 .cert-content {
@@ -405,56 +567,106 @@
 }
 
 .cert-content h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.65rem;
     line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.certification-card:hover .cert-content h3 {
+    color: #8B5CF6;
 }
 
 .cert-level {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.85rem;
     background: var(--purple-gradient);
     color: white;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.certification-card:hover .cert-level {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.4);
 }
 
 .cert-dates {
     display: flex;
     align-items: center;
     font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.certification-card:hover .cert-dates {
+    opacity: 1;
 }
 
 .cert-dates i {
     color: #8B5CF6;
+    filter: drop-shadow(0 2px 4px rgba(139, 92, 246, 0.3));
 }
 
 .cert-issuer {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.certification-card:hover .cert-issuer {
+    opacity: 0.9;
 }
 
 /* Personal Section */
 .personal-section {
     padding: 4rem;
-    border-radius: 20px;
+    border-radius: 24px;
     border: 2px solid;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.personal-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--purple-gradient);
 }
 
 [data-bs-theme="light"] .personal-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-color: #e9ecef;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 [data-bs-theme="dark"] .personal-section {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.personal-section:hover {
+    transform: translateY(-5px);
+}
+
+[data-bs-theme="light"] .personal-section:hover {
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.15);
+}
+
+[data-bs-theme="dark"] .personal-section:hover {
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.25);
 }
 
 .personal-content {
@@ -466,18 +678,36 @@
 
 .personal-image {
     width: 100%;
+    position: relative;
 }
 
 .personal-image img {
     width: 100%;
     border-radius: 20px;
+    border: 3px solid;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-bs-theme="light"] .personal-image img {
+    border-color: #8B5CF6;
     box-shadow: 0 15px 50px rgba(139, 92, 246, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-bs-theme="dark"] .personal-image img {
+    border-color: rgba(139, 92, 246, 0.5);
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.4);
 }
 
 .personal-image img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.4);
+    transform: scale(1.05) rotate(1deg);
+}
+
+[data-bs-theme="light"] .personal-image img:hover {
+    box-shadow: 0 25px 70px rgba(139, 92, 246, 0.45);
+}
+
+[data-bs-theme="dark"] .personal-image img:hover {
+    box-shadow: 0 25px 70px rgba(139, 92, 246, 0.55);
 }
 
 .personal-text {
@@ -490,9 +720,10 @@
 }
 
 .personal-text p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
+    opacity: 0.9;
 }
 
 /* Hobbies Grid */
@@ -503,120 +734,102 @@
 }
 
 .hobby-card {
-    padding: 2rem;
-    border-radius: 16px;
+    padding: 2.5rem;
+    border-radius: 20px;
     text-align: center;
     border: 2px solid;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hobby-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--purple-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hobby-card:hover::before {
+    opacity: 1;
 }
 
 [data-bs-theme="light"] .hobby-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-color: #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 [data-bs-theme="dark"] .hobby-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
     border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hobby-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-15px) scale(1.03);
     border-color: #8B5CF6;
-    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
+}
+
+[data-bs-theme="light"] .hobby-card:hover {
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.25);
+}
+
+[data-bs-theme="dark"] .hobby-card:hover {
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.35);
 }
 
 .hobby-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1.5rem;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--purple-gradient);
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
 }
 
 .hobby-card:hover .hobby-icon {
-    transform: rotateY(360deg);
+    transform: rotateY(360deg) scale(1.1);
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.5);
 }
 
 .hobby-icon i {
-    font-size: 2rem;
+    font-size: 2.25rem;
     color: white;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .hobby-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.35rem;
+    font-weight: 700;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.hobby-card:hover h3 {
+    color: #8B5CF6;
 }
 
 .hobby-card p {
     margin: 0;
     opacity: 0.85;
+    line-height: 1.6;
+    transition: opacity 0.3s ease;
 }
 
-/* CTA Section */
-.about-cta {
-    text-align: center;
-    padding: 4rem 3rem;
-    border-radius: 20px;
-    background: var(--purple-gradient);
-    color: white;
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
+.hobby-card:hover p {
+    opacity: 1;
 }
 
-.about-cta h2 {
-    font-weight: 700;
-    color: white;
-}
-
-.about-cta .lead {
-    opacity: 0.95;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.about-cta .btn {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.about-cta .btn-primary {
-    background: white !important;
-    color: #7C42E7 !important;
-    border: 2px solid white !important;
-}
-
-.about-cta .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.9) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.about-cta .btn-outline-primary {
-    background: transparent !important;
-    color: white !important;
-    border: 2px solid white !important;
-}
-
-.about-cta .btn-outline-primary:hover {
-    background: rgba(255, 255, 255, 0.15) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
 
 /* Responsive Design */
 @media (max-width: 991.98px) {
@@ -785,19 +998,6 @@
     
     .hobbies-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .about-cta {
-        padding: 3rem 2rem;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .about-cta .btn {
-        width: 100%;
     }
 }
 

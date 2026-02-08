@@ -672,64 +672,6 @@
 }
 
 /* Call to Action */
-.activities-cta {
-    text-align: center;
-    padding: 4rem 3rem;
-    border-radius: 20px;
-    background: var(--purple-gradient);
-    color: white;
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.3);
-}
-
-.activities-cta h2 {
-    font-weight: 700;
-    color: white;
-}
-
-.activities-cta .lead {
-    opacity: 0.95;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.activities-cta .btn {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.activities-cta .btn-primary {
-    background: white !important;
-    color: #7C42E7 !important;
-    border: 2px solid white !important;
-}
-
-.activities-cta .btn-primary:hover {
-    background: rgba(255, 255, 255, 0.9) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.activities-cta .btn-outline-primary {
-    background: transparent !important;
-    color: white !important;
-    border: 2px solid white !important;
-}
-
-.activities-cta .btn-outline-primary:hover {
-    background: rgba(255, 255, 255, 0.15) !important;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
 
 /* Responsive Design */
 @media (max-width: 1200px) {
@@ -812,19 +754,6 @@
     
     .tech-activities-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .activities-cta {
-        padding: 3rem 2rem;
-    }
-    
-    .cta-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .activities-cta .btn {
-        width: 100%;
     }
 }
 
