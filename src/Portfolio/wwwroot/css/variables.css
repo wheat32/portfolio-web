@@ -7,4 +7,19 @@
     );
     
     --primary-background: #7C42E7;
+    
+    /* Override Bootstrap primary color */
+    --bs-primary: #7C42E7;
+    --bs-primary-rgb: 124, 66, 231;
+}
+
+/* Custom primary button styling to use gradient */
+.btn-primary {
+    background: var(--purple-gradient) !important;
+    border-color: var(--primary-background) !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #5B1FA8 0%, #7C42E7 100%) !important;
+    border-color: #5B1FA8 !important;
 }
