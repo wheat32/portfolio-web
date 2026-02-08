@@ -1,0 +1,662 @@
+/* Education Page Styles */
+.education-container {
+    padding: 0 0 5rem 0;
+}
+
+/* Hero Section */
+.education-hero {
+    position: relative;
+    padding: 6rem 2rem 4rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 66, 231, 0.05) 100%);
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.hero-background {
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    font-size: 30rem;
+    opacity: 0.03;
+    color: #8B5CF6;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.education-hero h1 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+[data-bs-theme="light"] .education-hero h1 {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.education-hero .lead {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.hero-badges {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: var(--bs-body-bg);
+    border: 2px solid;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="light"] .hero-badge {
+    border-color: #8B5CF6;
+}
+
+[data-bs-theme="dark"] .hero-badge {
+    border-color: rgba(139, 92, 246, 0.5);
+}
+
+.hero-badge:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 35px rgba(139, 92, 246, 0.3);
+}
+
+.hero-badge i {
+    color: #8B5CF6;
+    font-size: 1.5rem;
+}
+
+/* Degree Section */
+.degree-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.degree-card {
+    background: var(--bs-body-bg);
+    border: 2px solid var(--bs-border-color);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.degree-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #8B5CF6 0%, #7C42E7 100%);
+}
+
+.degree-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.25);
+}
+
+.degree-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    align-items: start;
+}
+
+.degree-icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+.degree-icon i {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.degree-info h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.degree-institution {
+    font-size: 1.25rem;
+    color: #8B5CF6;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.degree-dates {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.degree-details {
+    background: var(--bs-secondary-bg);
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.detail-row {
+    display: flex;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 700;
+    min-width: 150px;
+    color: var(--bs-emphasis-color);
+}
+
+.detail-value {
+    flex: 1;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+[data-bs-theme="light"] .section-title {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title i {
+    color: #8B5CF6;
+}
+
+[data-bs-theme="light"] .section-title i {
+    -webkit-text-fill-color: #8B5CF6;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: var(--bs-body-bg);
+    border: 2px solid var(--bs-border-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    border-color: #8B5CF6;
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
+}
+
+.achievement-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    transform: scale(1.1) rotateY(360deg);
+}
+
+.achievement-icon.cumlaude {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.achievement-icon.deans {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+}
+
+.achievement-icon.leadership {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+}
+
+.achievement-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.achievement-card p {
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    bottom: -30px;
+    width: 3px;
+    background: linear-gradient(180deg, #8B5CF6 0%, rgba(139, 92, 246, 0.3) 100%);
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    border-radius: 50%;
+    border: 4px solid var(--bs-body-bg);
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
+    z-index: 2;
+}
+
+.timeline-content {
+    background: var(--bs-body-bg);
+    border: 2px solid var(--bs-border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: #8B5CF6;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.timeline-header h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.timeline-gpa {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(124, 66, 231, 0.1) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 20px;
+    font-weight: 700;
+    color: #8B5CF6;
+    font-size: 0.95rem;
+}
+
+.timeline-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.timeline-badge.graduated {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--bs-secondary-bg);
+    border: 1px solid var(--bs-border-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+    border-color: #8B5CF6;
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.15);
+}
+
+.course-code {
+    font-weight: 700;
+    color: #8B5CF6;
+    font-size: 0.9rem;
+}
+
+.course-name {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.course-grade {
+    align-self: flex-start;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.grade-a {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    color: white;
+}
+
+.grade-b {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+}
+
+.grade-c {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    color: white;
+}
+
+.transfer-note {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(139, 92, 246, 0.1);
+    border-left: 4px solid #8B5CF6;
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.graduation-banner {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.15rem;
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+}
+
+/* Skills Developed Section */
+.skills-developed-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, transparent 100%);
+}
+
+.skills-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-category {
+    background: var(--bs-body-bg);
+    border: 2px solid var(--bs-border-color);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    border-color: #8B5CF6;
+    box-shadow: 0 15px 45px rgba(139, 92, 246, 0.2);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #8B5CF6;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 66, 231, 0.05) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* CTA Wrapper */
+.education-cta-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .education-hero {
+        padding: 4rem 2rem 3rem;
+    }
+    
+    .education-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-badges {
+        gap: 1rem;
+    }
+    
+    .degree-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .degree-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .degree-icon i {
+        font-size: 2.5rem;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        padding-left: 3rem;
+    }
+    
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .education-hero {
+        padding: 3rem 1.5rem 2rem;
+    }
+    
+    .education-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-background {
+        font-size: 15rem;
+        right: -50px;
+    }
+    
+    .hero-badges {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-badge {
+        justify-content: center;
+    }
+    
+    .degree-section {
+        padding: 1.5rem;
+    }
+    
+    .degree-card {
+        padding: 2rem;
+    }
+    
+    .degree-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .detail-row {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .detail-label {
+        min-width: auto;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline-item {
+        padding-left: 2.5rem;
+    }
+    
+    .timeline-marker {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .skill-category {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-background {
+        display: none;
+    }
+    
+    .degree-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .degree-icon i {
+        font-size: 2rem;
+    }
+    
+    .achievement-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .achievement-icon i {
+        font-size: 2rem;
+    }
+}
+
