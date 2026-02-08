@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with **Blazor Server** and **ASP.NET Core**, showcasing my professional experience, education, projects, and technical skills as a software engineer and instructor.
 
-🌐 **Live Site:** [nicholaspage.dev/]
+🌐 **Live Site:** [nicholaspage.dev/](https://nicholaspage.dev/)
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat&logo=dotnet)](https://dotnet.microsoft.com/)
 [![Blazor](https://img.shields.io/badge/Blazor-Server-512BD4?style=flat&logo=blazor)](https://blazor.net/)
