@@ -1,0 +1,162 @@
+@inject NavigationManager Navigation
+
+@code {
+    [Parameter] public String? Title { get; set; }
+    [Parameter] public String? Description { get; set; }
+    [Parameter] public String? Keywords { get; set; }
+    [Parameter] public String? ImageUrl { get; set; }
+    [Parameter] public String? Type { get; set; } = "website";
+    [Parameter] public String? Author { get; set; } = "Nicholas E. Page";
+    
+    private String GetFullUrl(String? relativeUrl)
+    {
+        if (String.IsNullOrEmpty(relativeUrl)) return Navigation.BaseUri.TrimEnd('/');
+        if (relativeUrl.StartsWith("http")) return relativeUrl;
+        return $"{Navigation.BaseUri.TrimEnd('/')}/{relativeUrl.TrimStart('/')}";
+    }
+
+    private String CurrentUrl => Navigation.Uri;
+    
+    private String DefaultTitle => "Nicholas Page - Software Engineer & Instructor | Full-Stack Developer";
+    private String DefaultDescription => "Portfolio of Nicholas Page, a software engineer and instructor with 8 years of experience in C#, ASP.NET, Java, C++, and full-stack development. Specializing in DevOps, cloud systems, and technical education.";
+    private String DefaultKeywords => "Nicholas Page, Software Engineer, Full-Stack Developer, IT Instructor, C# Developer, ASP.NET, Java Programming, C++ Programming, DevOps, Cloud Computing, Database Engineering, Systems Programming, Web Development, Software Development, Technical Instructor, Pennsylvania Developer";
+    private String DefaultImage => "images/south_hills_headshot.jpg";
+    
+    private String PageTitle => Title ?? DefaultTitle;
+    private String PageDescription => Description ?? DefaultDescription;
+    private String PageKeywords => Keywords ?? DefaultKeywords;
+    private String PageImage => GetFullUrl(ImageUrl ?? DefaultImage);
+}
+
+<HeadContent>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="@PageTitle" />
+    <meta name="description" content="@PageDescription" />
+    <meta name="keywords" content="@PageKeywords" />
+    <meta name="author" content="@Author" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Prevent AI Scraping -->
+    <meta name="robots" content="noai, noimageai" />
+    <meta name="googlebot-news" content="nosnippet" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="@Type" />
+    <meta property="og:url" content="@CurrentUrl" />
+    <meta property="og:title" content="@PageTitle" />
+    <meta property="og:description" content="@PageDescription" />
+    <meta property="og:image" content="@PageImage" />
+    <meta property="og:site_name" content="Nicholas Page Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="@CurrentUrl" />
+    <meta name="twitter:title" content="@PageTitle" />
+    <meta name="twitter:description" content="@PageDescription" />
+    <meta name="twitter:image" content="@PageImage" />
+    <meta name="twitter:creator" content="@("@wheat32")" />
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#0d6efd" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="@CurrentUrl" />
+    
+    <!-- Structured Data for Person -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "Person",
+        "name": "Nicholas E. Page",
+        "jobTitle": "Software Engineer & IT Instructor",
+        "description": "@PageDescription",
+        "url": "@(Navigation.BaseUri.TrimEnd('/'))",
+        "image": "@PageImage",
+        "email": "nickpage3232@@yahoo.com",
+        "address": {
+            "@@type": "PostalAddress",
+            "addressLocality": "Spring Mills",
+            "addressRegion": "PA",
+            "postalCode": "16875"
+        },
+        "alumniOf": {
+            "@@type": "CollegeOrUniversity",
+            "name": "Lock Haven University"
+        },
+        "knowsAbout": [
+            "C# Programming",
+            "ASP.NET",
+            "Java",
+            "C++",
+            "JavaScript",
+            "Software Development",
+            "DevOps",
+            "Database Engineering",
+            "Cloud Computing",
+            "Technical Education"
+        ],
+        "sameAs": [
+            "https://github.com/wheat32"
+        ]
+    }
+    </script>
+    
+    <!-- Structured Data for Website -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "WebSite",
+        "name": "Nicholas Page Portfolio",
+        "url": "@(Navigation.BaseUri.TrimEnd('/'))",
+        "description": "Professional portfolio of Nicholas E. Page - Software Engineer and IT Instructor",
+        "author": {
+            "@@type": "Person",
+            "name": "Nicholas E. Page"
+        },
+        "inLanguage": "en-US"
+    }
+    </script>
+    
+    <!-- Structured Data for Professional Service -->
+    <script type="application/ld+json">
+    {
+        "@@context": "https://schema.org",
+        "@@type": "ProfessionalService",
+        "name": "Nicholas Page - Software Development & IT Instruction",
+        "description": "Professional software development and technical instruction services",
+        "url": "@(Navigation.BaseUri.TrimEnd('/'))",
+        "address": {
+            "@@type": "PostalAddress",
+            "addressLocality": "Spring Mills",
+            "addressRegion": "PA",
+            "postalCode": "16875",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@@type": "Country",
+            "name": "United States"
+        },
+        "email": "nickpage3232@@yahoo.com",
+        "knowsAbout": [
+            "C# Programming",
+            "ASP.NET Core",
+            "Java Development",
+            "C++ Programming",
+            "JavaScript",
+            "Python",
+            "DevOps",
+            "CI/CD",
+            "Database Administration",
+            "Cloud Computing",
+            "AWS",
+            "Azure",
+            "Technical Education",
+            "Curriculum Development"
+        ]
+    }
+    </script>
+</HeadContent>
+
+
+

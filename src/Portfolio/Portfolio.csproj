@@ -19,6 +19,10 @@
         <PackageReference Include="BlazorPageScript" Version="1.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\.well-known\security.txt" />
+    </ItemGroup>
+
     <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
         <Exec Command="bash &quot;$(ProjectDir)/versioning.sh&quot; &quot;$(Configuration)&quot;"/>
     </Target>

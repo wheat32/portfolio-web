@@ -1,0 +1,19 @@
+/* TEAM */
+Developer: Nicholas E. Page
+Site: https://nicholaspage.dev
+Location: Spring Mills, PA, USA
+Email: nickpage3232@yahoo.com
+GitHub: https://github.com/wheat32
+
+/* SITE */
+Last update: 2026/02/09
+Standards: HTML5, CSS3, JavaScript (ES6+)
+Components: ASP.NET Blazor, Bootstrap 5
+Software: JetBrains Rider, Visual Studio Code
+Version Control: Git
+
+/* THANKS */
+Bootstrap Team
+ASP.NET Team
+Open Source Community
+

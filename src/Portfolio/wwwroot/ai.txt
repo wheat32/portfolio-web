@@ -1,0 +1,45 @@
+# AI.txt - Opt-out of AI Training
+# See: https://site.spawning.ai/ai-txt
+
+# Global Opt-Out
+User-agent: *
+Disallow: /
+
+# Opt-out from all AI training and scraping
+AI-Agent: *
+Disallow: /
+
+# Specific AI scrapers
+AI-Agent: GPTBot
+Disallow: /
+
+AI-Agent: ChatGPT-User
+Disallow: /
+
+AI-Agent: Google-Extended
+Disallow: /
+
+AI-Agent: CCBot
+Disallow: /
+
+AI-Agent: anthropic-ai
+Disallow: /
+
+AI-Agent: Claude-Web
+Disallow: /
+
+AI-Agent: ClaudeBot
+Disallow: /
+
+AI-Agent: cohere-ai
+Disallow: /
+
+AI-Agent: Omgilibot
+Disallow: /
+
+AI-Agent: FacebookBot
+Disallow: /
+
+AI-Agent: Diffbot
+Disallow: /
+
