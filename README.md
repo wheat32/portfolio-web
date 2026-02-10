@@ -209,7 +209,7 @@ IT/Software Development Instructor & Software Engineer
 
 ### 🔗 Connect With Me
 
-- 📧 Email: [nickpage32@comcast.net](mailto:nickpage32@comcast.net)
+- 📧 Email: [nickpage3232@yahoo.com](mailto:nickpage3232@yahoo.com)
 - 💼 GitHub: [@wheat32](https://github.com/wheat32)
 - 📍 Location: Spring Mills, PA
 
