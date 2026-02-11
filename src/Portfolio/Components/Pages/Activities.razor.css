@@ -1,10 +1,11 @@
+/* Uses .page-container from app.css */
 .activities-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 2rem 6rem 2rem;
 }
 
-/* Hero Section */
+/* Uses .hero-section from app.css */
 .activities-hero {
     background: var(--purple-gradient);
     border-radius: 20px;
@@ -15,14 +16,7 @@
     text-align: center;
 }
 
-.hero-content h1 {
-    font-weight: 700;
-    color: white;
-}
-
 .hero-content .lead {
-    font-size: 1.25rem;
-    opacity: 0.95;
     max-width: 900px;
     margin: 0 auto 2rem;
 }
@@ -47,35 +41,11 @@
     color: #5B1FA8;
 }
 
-/* Sections */
+/* Sections - uses .section-title from app.css */
 .activities-section {
     margin-bottom: 4rem;
 }
 
-.section-title {
-    font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 3px solid;
-    display: flex;
-    align-items: center;
-}
-
-[data-bs-theme="light"] .section-title {
-    border-color: rgba(139, 92, 246, 0.3);
-}
-
-[data-bs-theme="dark"] .section-title {
-    border-color: rgba(139, 92, 246, 0.5);
-}
-
-.section-title i {
-    background: var(--purple-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
 
 /* Open Source Projects */
 .projects-grid {
@@ -165,6 +135,7 @@
     color: white;
 }
 
+/* Uses .image-container from app.css */
 .project-screenshot {
     width: 100%;
     margin-bottom: 1.5rem;
@@ -209,30 +180,14 @@
     margin-bottom: 1.5rem;
 }
 
-.tech-tag {
-    padding: 0.4rem 0.9rem;
-    border-radius: 15px;
-    font-size: 0.85rem;
-    font-weight: 500;
-}
-
-[data-bs-theme="light"] .tech-tag {
-    background: #f8f9fa;
-    color: #495057;
-    border: 1px solid #dee2e6;
-}
-
-[data-bs-theme="dark"] .tech-tag {
-    background: rgba(255, 255, 255, 0.08);
-    color: #e9ecef;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
+/* Uses .tech-tag from app.css */
 
 .project-links {
     display: flex;
     gap: 1rem;
 }
 
+/* Uses .btn-purple from app.css */
 .project-link {
     display: inline-flex;
     align-items: center;
@@ -308,6 +263,7 @@
     color: white;
 }
 
+/* Uses .status-badge from app.css */
 .freelance-status {
     padding: 0.35rem 0.8rem;
     border-radius: 15px;
@@ -344,18 +300,7 @@
     margin-bottom: 1.5rem;
 }
 
-.detail-row {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.detail-row i {
-    color: #8B5CF6;
-    margin-top: 0.2rem;
-}
+/* Uses .detail-row from app.css */
 
 .freelance-links {
     display: flex;
@@ -488,13 +433,14 @@
     opacity: 0.9;
 }
 
-/* Academic Activities */
+/* Academic Activities - uses .grid-auto-fit-300 from app.css */
 .academic-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
+/* Uses .card-base from app.css */
 .academic-card {
     padding: 2rem;
     border-radius: 16px;

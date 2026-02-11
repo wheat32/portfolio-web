@@ -342,6 +342,7 @@
     gap: 0.5rem;
 }
 
+/* Uses .tag pattern from app.css */
 .home-expertise-tags .tag {
     background: var(--bs-tertiary-bg);
     padding: 0.4rem 0.9rem;

@@ -12,16 +12,7 @@
     margin-bottom: 4rem;
 }
 
-.hero-background {
-    position: absolute;
-    top: 50%;
-    right: -100px;
-    transform: translateY(-50%);
-    font-size: 30rem;
-    opacity: 0.03;
-    color: #8B5CF6;
-    pointer-events: none;
-}
+/* Uses .hero-background from app.css */
 
 .hero-content {
     max-width: 1200px;
@@ -198,34 +189,16 @@
     margin: 0 auto;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-}
+/* Uses .section-title from app.css */
 
-[data-bs-theme="light"] .section-title {
-    background: linear-gradient(135deg, #8B5CF6 0%, #7C42E7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.section-title i {
-    color: #8B5CF6;
-}
-
-[data-bs-theme="light"] .section-title i {
-    -webkit-text-fill-color: #8B5CF6;
-}
-
+/* Uses .grid-auto-fit-300 from app.css */
 .achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
+/* Uses .card-base from app.css */
 .achievement-card {
     background: var(--bs-body-bg);
     border: 2px solid var(--bs-border-color);
@@ -242,6 +215,7 @@
     box-shadow: 0 20px 50px rgba(139, 92, 246, 0.25);
 }
 
+/* Uses .icon-circle from app.css */
 .achievement-icon {
     width: 90px;
     height: 90px;
@@ -502,6 +476,7 @@
     gap: 1rem;
 }
 
+/* Uses .tech-tag from app.css */
 .skill-tag {
     display: inline-block;
     padding: 0.75rem 1.5rem;

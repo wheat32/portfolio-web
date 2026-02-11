@@ -29,6 +29,7 @@
     border-bottom: 2px solid rgba(139, 92, 246, 0.3);
 }
 
+/* Uses .grid-auto-fit-300 from app.css */
 .credits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
