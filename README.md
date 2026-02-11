@@ -42,8 +42,6 @@ A modern, responsive portfolio website built with **Blazor Server** and **ASP.NE
   - 15+ courses taught
   - Custom tools developed (Grading Tools Suite, shsdp.dev platform)
   - System modernization (.NET Framework → .NET Core 10)
-- **DFIN Details**: Technical Engagement Developer role with security focus
-- Company logos with consistent styling
 - Interactive cards with hover effects
 
 #### 🎓 Education
@@ -94,49 +92,11 @@ A modern, responsive portfolio website built with **Blazor Server** and **ASP.NE
 - **[Git](https://git-scm.com/)** - Version control
 - **[Azure DevOps](https://azure.microsoft.com/services/devops/)** - Project management
 
-## 📦 Project Structure
-
-```
-src/Portfolio/
-├── Components/
-│   ├── Layout/
-│   │   ├── MainLayout.razor          # Main layout wrapper
-│   │   ├── TerminalLayout.razor      # Terminal-style layout
-│   │   └── ReconnectModal.razor      # SignalR reconnection UI
-│   ├── Pages/
-│   │   ├── Home.razor                # Landing page
-│   │   ├── About.razor               # About page
-│   │   ├── Education.razor           # Education details
-│   │   ├── Experiences.razor         # Work experience overview
-│   │   ├── SouthHillsExperience.razor # South Hills detailed page
-│   │   ├── DfinExperience.razor      # DFIN detailed page
-│   │   ├── Activities.razor          # Projects and activities
-│   │   └── Credits.razor             # Credits and licenses
-│   └── Shared/
-│       ├── NavMenu.razor             # Navigation bar
-│       ├── Footer.razor              # Footer with version
-│       ├── ContactCta.razor          # Reusable CTA component
-│       └── ThemeChangeMenu.razor     # Theme switcher
-├── wwwroot/
-│   ├── css/
-│   │   ├── app.css                   # Global styles
-│   │   ├── terminal.css              # Terminal theme styles
-│   │   └── variables.css             # CSS custom properties
-│   ├── images/                       # Images and logos
-│   ├── js/
-│   │   └── general.js                # Custom JavaScript
-│   └── lib/                          # Third-party libraries
-├── Program.cs                        # Application entry point
-├── version.json                      # Version configuration
-└── Portfolio.csproj                  # Project file
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-- A code editor ([Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), or [Rider](https://www.jetbrains.com/rider/))
 
 ### Installation
 

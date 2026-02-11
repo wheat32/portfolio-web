@@ -6,7 +6,7 @@
     [Parameter] public String? Keywords { get; set; }
     [Parameter] public String? ImageUrl { get; set; }
     [Parameter] public String? Type { get; set; } = "website";
-    [Parameter] public String? Author { get; set; } = "Nicholas E. Page";
+    [Parameter] public String? Author { get; set; } = "Nicholas Page";
     
     private String GetFullUrl(String? relativeUrl)
     {
@@ -50,14 +50,6 @@
     <meta property="og:site_name" content="Nicholas Page Portfolio" />
     <meta property="og:locale" content="en_US" />
     
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="@CurrentUrl" />
-    <meta name="twitter:title" content="@PageTitle" />
-    <meta name="twitter:description" content="@PageDescription" />
-    <meta name="twitter:image" content="@PageImage" />
-    <meta name="twitter:creator" content="@("@wheat32")" />
-    
     <!-- Additional SEO -->
     <meta name="theme-color" content="#0d6efd" />
     <meta name="format-detection" content="telephone=no" />
@@ -68,7 +60,7 @@
     {
         "@@context": "https://schema.org",
         "@@type": "Person",
-        "name": "Nicholas E. Page",
+        "name": "Nicholas Page",
         "jobTitle": "Software Engineer & IT Instructor",
         "description": "@PageDescription",
         "url": "@(Navigation.BaseUri.TrimEnd('/'))",
@@ -109,10 +101,10 @@
         "@@type": "WebSite",
         "name": "Nicholas Page Portfolio",
         "url": "@(Navigation.BaseUri.TrimEnd('/'))",
-        "description": "Professional portfolio of Nicholas E. Page - Software Engineer and IT Instructor",
+        "description": "Professional portfolio of Nicholas Page - Software Engineer and IT Instructor",
         "author": {
             "@@type": "Person",
-            "name": "Nicholas E. Page"
+            "name": "Nicholas Page"
         },
         "inLanguage": "en-US"
     }

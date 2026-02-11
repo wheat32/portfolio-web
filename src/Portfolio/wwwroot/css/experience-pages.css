@@ -534,29 +534,29 @@
         flex-direction: column;
         text-align: center;
     }
-    
+
     .company-logo-large {
         width: 180px;
         height: 180px;
     }
-    
+
     .role-section {
         padding: 2.5rem;
     }
-    
+
     .role-header {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .tools-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .courses-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-    
+
     .responsibility-item {
         flex-direction: column;
         align-items: center;
@@ -568,54 +568,54 @@
     .experience-detail-container {
         padding: 1.5rem 1.5rem 4rem;
     }
-    
+
     .detail-header {
         padding: 2rem;
     }
-    
+
     .header-content h1 {
         font-size: 2rem;
     }
-    
+
     .header-content .company-name {
         font-size: 1.25rem;
     }
-    
+
     .company-logo-large {
         width: 150px;
         height: 150px;
         padding: 1.5rem;
     }
-    
+
     .role-section {
         padding: 2rem 1.5rem;
     }
-    
+
     .role-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .role-icon i {
         font-size: 2rem;
     }
-    
+
     .detail-section h2 {
         font-size: 1.75rem;
     }
-    
+
     .courses-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tech-categories {
         grid-template-columns: 1fr;
     }
-    
+
     .detail-navigation {
         flex-direction: column;
     }
-    
+
     .nav-button {
         width: 100%;
         justify-content: center;
@@ -628,16 +628,16 @@
         height: 120px;
         padding: 1rem;
     }
-    
+
     .responsibility-icon {
         width: 60px;
         height: 60px;
     }
-    
+
     .responsibility-icon i {
         font-size: 1.5rem;
     }
-    
+
     .achievement-number {
         font-size: 2.5rem;
     }
