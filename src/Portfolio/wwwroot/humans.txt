@@ -2,7 +2,7 @@
 Developer: Nicholas Page
 Site: https://nicholaspage.dev
 Location: Spring Mills, PA, USA
-Email: nickpage3232@yahoo.com
+Email: careers@nicholaspage.dev
 GitHub: https://github.com/wheat32
 
 /* SITE */

@@ -169,7 +169,7 @@ IT/Software Development Instructor & Software Engineer
 
 ### 🔗 Connect With Me
 
-- 📧 Email: [nickpage3232@yahoo.com](mailto:nickpage3232@yahoo.com)
+- 📧 Email: [careers@nicholaspage.dev](mailto:careers@nicholaspage.dev)
 - 💼 GitHub: [@wheat32](https://github.com/wheat32)
 - 📍 Location: Spring Mills, PA
 

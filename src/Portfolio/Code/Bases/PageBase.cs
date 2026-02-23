@@ -6,7 +6,7 @@ namespace Portfolio.Code.Bases;
 
 public class PageBase : ComponentBase, IDisposable
 {
-    private string? _lastUri;
+    private String? _lastUri;
 
     [Inject] protected NavigationManager? NavigationManager { get; set; }
 
@@ -28,7 +28,7 @@ public class PageBase : ComponentBase, IDisposable
         if (firstRender) await JSRuntime!.InvokeVoidAsync("loadBlazor");
     }
 
-    private async void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    private async void OnLocationChanged(Object? sender, LocationChangedEventArgs e)
     {
         // Avoid duplicate calls
         if (e.Location != _lastUri)

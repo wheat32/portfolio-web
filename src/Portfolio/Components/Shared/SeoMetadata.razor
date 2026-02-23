@@ -65,7 +65,7 @@
         "description": "@PageDescription",
         "url": "@(Navigation.BaseUri.TrimEnd('/'))",
         "image": "@PageImage",
-        "email": "nickpage3232@@yahoo.com",
+        "email": "@Text.Get("emailAddress")",
         "address": {
             "@@type": "PostalAddress",
             "addressLocality": "Spring Mills",
@@ -129,7 +129,7 @@
             "@@type": "Country",
             "name": "United States"
         },
-        "email": "nickpage3232@@yahoo.com",
+        "email": "@Text.Get("emailAddress")",
         "knowsAbout": [
             "C# Programming",
             "ASP.NET Core",
