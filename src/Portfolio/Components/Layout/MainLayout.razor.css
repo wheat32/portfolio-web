@@ -98,3 +98,62 @@ main {
     right: 0.75rem;
     top: 0.5rem;
 }
+
+/* ========================================
+   Opportunity Banner
+   ======================================== */
+
+.opportunity-banner {
+    background: var(--purple-gradient);
+    color: white;
+    padding: 0.55rem 1.25rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    box-shadow: 0 2px 8px rgba(109, 40, 217, 0.35);
+}
+
+.opportunity-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.opportunity-banner-inner i.bi-briefcase-fill {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.opportunity-banner-cta {
+    color: white;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 0.2rem 0.85rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    transition: background 0.2s, border-color 0.2s;
+    white-space: nowrap;
+}
+
+.opportunity-banner-cta:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.7);
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .opportunity-banner-inner span {
+        display: none;
+    }
+    .opportunity-banner-inner {
+        gap: 0.5rem;
+    }
+}
